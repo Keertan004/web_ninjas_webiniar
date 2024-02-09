@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+.body{
+background-image: url('images/bg.jpg');   
+image-rendering: auto; 
+background-size: cover;
+height: fit-content;
+opacity: 1;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(134, 127, 135, 0.527);
+    background-size: cover;
+    opacity: 1;
+    
+
+}
+.logo{
+    position: relative;
+    width: 120px;
+    cursor:pointer;
+    padding-left: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    position: fixed;
+    opacity: 1;
+}
+.navi{
+    background-color: black;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+.navi ul li{
+    list-style: none;
+    display: inline-flex;
+    margin:0 20px;
+    position:relative;
+    padding-bottom: 10px;
+    overflow: hidden;
+    z-index: 99999;
+    background-color: black;
+}
+.navi ul li a{
+    font-family: sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(200, 98, 244);
+    padding-top: 10px;
+    position: relative;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+}
+.navi ul li::after{
+    content:'';
+    height:3px;
+    width:0%;
+    background: #009688;
+    position:absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s;
+    z-index: 1000;
+}
+.navi ul li:hover::after{
+    width:100%;
+
+}
+.navback{
+    width: fit-content;
+    padding-bottom: 2px;
+    padding-left: 25%;
+    padding-right: 30px;
+    display: inline-block;
+    position: fixed;
+}
+.navi ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+.main{
+    background-repeat: repeat-y;
+    background-size: auto;
+    width: 100%;
+    position: static;
+    display: flex;
+    margin: auto;
+    padding-left: 0px;
+    
+    
+}
+.bgimg{
+    opacity: 0.5;
+    overflow: hidden;
+}
+.iste{
+    position: relative;
+    padding-left: 150px;
+    font-size: xx-large;
+    font-weight: 800;
+    color: honeydew;
+    font-style: normal;
+    position: fixed;
+    text-shadow: -1px 1px 0 #000,
+                2px 2px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+.aboutus{
+    position: absolute;
+   top: 30%;
+    transform: translate(3%,10%);
+    overflow: hidden;
+    right: 5%;
+    color: white;
+    z-index: -1;
+}
+.imp{
+    font-weight: 700;
+    font-style: italic;
+    display: flex;
+    
+}
+.imp::after{
+    content:'';
+    height:3px;
+    width:0%;
+    background: #d22525;
+    position:absolute;
+    left: 0;
+    bottom: 157px;
+    transition: 0.5s;
+}
+.imp:hover::after{
+    width:12%;
+    cursor: default;
+
+}
+.impo{
+    font-weight: 700;
+    font-style: italic;
+    display: flex;
+}
+.impo::after{
+    content:'';
+    height:3px;
+    width:0%;
+    background: #d22525;
+    position:absolute;
+    left: 0;
+    bottom: 418px;
+    transition: 0.5s;
+}
+.impo:hover::after{
+    width:3%;
+    cursor: default;
+
+}
+.aboutlinks{
+    position: absolute;
+    left: 40px;   
+    top:100%;
+}
+.aboutlinks ul li{
+    list-style: none;
+    display: inline-flex;
+    margin:0 20px;
+    position:relative;
+    padding-bottom: 10px;
+}
+.aboutlinks ul li a{
+    font-family: sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+     
+}
+.aboutlinks ul li::after{
+    content:'';
+    height:3px;
+    width:0%;
+    background: #ff0505;
+    position:absolute;
+    left: 0;
+    bottom: 9px;
+    transition: 0.5s;
+}
+.aboutlinks ul li:hover::after{
+    width:100%;
+
+}
+.abcont{
+    align-content: center;
+    top: 2%;
+    left: 5%;
+}
+.contento{
+    color: white;
+    opacity: 1;
+    font-weight: 700;
+
+}
+.event{
+    margin-inline-start: 30px;
+    display: inline-block;
+    left: 50%;
+    right: 50%;
+    width: fit-content;
+    
+
+}
+.imevo{
+    width: 400px;
+    justify-content: center;
+    position: relative;
+    left: 120%;
+    right: 50%;
+    translate: -50,-50;
+}
+.card{
+    margin-top: 30px;
+    width:400px;
+    aspect-ratio:1/0.7;
+    border-radius: 8px;
+    position: relative;
+    align-content: center;
+    filter: grayscale(100%);
+    filter: brightness(50%);
+    
+    
+   
+    
+}
+.card.img-box{
+    position:relative;
+    width: 100px;
+    height:100px;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    align-content: center;
+    border: rgb(255, 255, 255);
+    
+
+}
+
+
+
+.card:hover{
+filter:grayscale(0%);
+
+        
+}
+.card:hover::after{
+    opacity: 1;
+    inset: 20px;
+    align-content: center;
+}
+.card:hover .contt h2{
+    scale: 1;
+    opacity: 1;
+}
+.card:hover .contt p{
+    opacity: 1;
+    transform: translateY(9);
+}
+.contt{
+    color: white;
+    justify-content: center;
+}
+
+
+    
+.contt h2{
+    position:relative;
+    left: 120%;
+    right: 50%;
+    align-content: center;
+}
+.contt p{
+    position:relative;
+    left: 120%;
+    right: 50%;
+
+}
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+   
+  }
+  
+  .image {
+    top: 50px;
+    position: relative;
+    
+    
+    
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    size: 100px;
+    transition: transform 0.5s ease;
+  }
+  
+  .image:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  }
+  
+  .image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image:hover:before {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .image:after {
+    content: 'View Image'; /* Text overlay */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image:hover:after {
+    opacity: 1; /* Show text overlay on hover */
+  }
+
+.galla{
+    display:grid;
+    position:relative;
+    left: 50%;
+    top:60px;
+    right: 200px;
+    justify-content: center;
+  }
+  .imagee{
+    justify-content: center;
+    right: 1000px;
+    translate: -50,-50;  
+  }
+  .fac {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.faculty-member {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.faculty-member img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+.hdng{
+    font-weight:700;
+    color: #ff0505;
+}
+.faculty-membermain {
+    background-color: #cfacac;
+    border: 4px solid #ff0000;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+.faculty-membermain img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+
+main {
+    display: block;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    right: 500px;
+    left: 500px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    margin:20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: #f4f4f4;
+    border: 5px solid #fa7575;
+    padding: 10px 10px 10px 10px;
+    opacity: 1;
+    filter: blur(4);
+    top: 50px;
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #28c966;
+
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #0c511a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #30ca4f75;
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.imagez {
+    flex: 0.25; /* Take up 50% of the container */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 30px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.951); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out;
+    height: 300px;
+    bottom: 30px;
+}
+
+.info {
+    flex: 0.50; /* Take up 50% of the container */
+    padding: 20px; /* Add padding for spacing */
+    
+}
+
+.info h2 { /* Caption color */
+    font-size: 36px;
+    color: #d36e6e;
+    text-align: center;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.info p {
+    color: #ffffff; /* Information color */
+}
+.info h2:hover{
+    color: #ff7f50; /* Change to your preferred hover color */
+    font-size: 40px;
+}
+.image:hover{
+    transform: scale(1.05); /* Scale up the image on hover */
+    
+}
+.welcome-text {
+    text-align: center; /* Center align the text */
+    padding: 50px; /* Add padding for spacing */
+    overflow: hidden;
+}
+
+.welcome-text h1 {
+    font-size: 36px; /* Set the font size for the heading */
+    color: #eeeeef; /* Set the color of the heading */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    overflow: hidden;
+}
+
+.welcome-text p {
+    font-size: 18px; /* Set the font size for the paragraph */
+    color: #df8244; /* Set the color of the paragraph */
+    line-height: 1.5; /* Set the line height for better readability */
+}
+.welcome-text:hover h1,
+.welcome-text:hover p {
+    color: #ffffff; /* Change text color on hover */
+    transform: scale(1.05);
+    transition: color 1s ease-in-out, font-size 1s;
+    background-image: url('images/iste/logo.png') ;
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+.backo{
+    display: none;
+    position: relative;
+    width: 200px;
+    justify-content: center;
+    left: 600px;
+}
+.backo img {
+    max-width: 100%; /* Set the maximum width of the image to 100% of the container */
+    height: auto; /* Set the height to auto to maintain aspect ratio */
+}
+.welcome-text:hover + .backo {
+    display: block; /* Hide .backo when .welcome-text is hovered */
+}
